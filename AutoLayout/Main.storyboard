@@ -77,17 +77,40 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHk-XJ-7bl">
+                                <rect key="frame" x="20" y="328" width="353" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-Ux-3xH">
+                                        <rect key="frame" x="146.66666666666666" y="34.333333333333329" width="60" height="59.333333333333329"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="HrT-YS-Ga6"/>
+                                            <constraint firstAttribute="width" constant="60" id="TMa-dg-rG4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstItem="Lih-Ux-3xH" firstAttribute="centerY" secondItem="sHk-XJ-7bl" secondAttribute="centerY" id="bVo-LE-1eE"/>
+                                    <constraint firstItem="Lih-Ux-3xH" firstAttribute="centerX" secondItem="sHk-XJ-7bl" secondAttribute="centerX" id="tB0-Kc-DXT"/>
+                                    <constraint firstAttribute="height" constant="128" id="vQg-nX-6k6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IxK-6C-Gk8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="G5q-r9-adL" firstAttribute="centerX" secondItem="DZV-IK-nha" secondAttribute="centerX" id="5W8-dJ-xfj"/>
                             <constraint firstItem="2va-n7-JG5" firstAttribute="top" secondItem="IxK-6C-Gk8" secondAttribute="top" constant="10" id="C0k-lz-DCI"/>
+                            <constraint firstItem="sHk-XJ-7bl" firstAttribute="centerX" secondItem="DZV-IK-nha" secondAttribute="centerX" id="MZO-vb-Qeb"/>
                             <constraint firstItem="G5q-r9-adL" firstAttribute="top" secondItem="z5e-rK-y2G" secondAttribute="bottom" constant="20" id="PNa-Zb-oL6"/>
                             <constraint firstItem="z5e-rK-y2G" firstAttribute="leading" secondItem="IxK-6C-Gk8" secondAttribute="leading" constant="10" id="PSu-tG-8cj"/>
+                            <constraint firstItem="sHk-XJ-7bl" firstAttribute="leading" secondItem="IxK-6C-Gk8" secondAttribute="leading" constant="20" id="QyL-BN-yp4"/>
                             <constraint firstItem="IxK-6C-Gk8" firstAttribute="trailing" secondItem="z5e-rK-y2G" secondAttribute="trailing" constant="10" id="RfJ-Io-bOk"/>
                             <constraint firstItem="2va-n7-JG5" firstAttribute="leading" secondItem="IxK-6C-Gk8" secondAttribute="leading" constant="30" id="Vnh-n2-ckI"/>
+                            <constraint firstItem="sHk-XJ-7bl" firstAttribute="top" secondItem="G5q-r9-adL" secondAttribute="bottom" constant="30" id="XCT-Vf-1tz"/>
                             <constraint firstItem="IxK-6C-Gk8" firstAttribute="trailing" secondItem="2va-n7-JG5" secondAttribute="trailing" constant="30" id="ZoK-iN-0UJ"/>
+                            <constraint firstItem="IxK-6C-Gk8" firstAttribute="trailing" secondItem="sHk-XJ-7bl" secondAttribute="trailing" constant="20" id="hf4-9K-Te7"/>
                             <constraint firstItem="z5e-rK-y2G" firstAttribute="top" secondItem="2va-n7-JG5" secondAttribute="bottom" constant="20" id="unv-PJ-S1d"/>
                             <constraint firstItem="z5e-rK-y2G" firstAttribute="centerX" secondItem="DZV-IK-nha" secondAttribute="centerX" id="zXo-IR-ujK"/>
                         </constraints>
@@ -99,6 +122,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
@@ -107,6 +131,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
